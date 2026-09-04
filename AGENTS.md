@@ -2,9 +2,9 @@
 
 ## Project purpose
 
-- Maintain a lightweight, public GitHub Pages site for the 2026 Kyrgyzstan 8-day private horse-riding and hiking itinerary.
+- Maintain a lightweight, public GitHub Pages site for the 2026 Kyrgyzstan private horse-riding and hiking itinerary, including any user-supplied extensions to its duration.
 - Preserve a fast, readable experience on desktop and mobile.
-- Keep the current D1–D8 card interaction and the synchronized Leaflet map working.
+- Keep every itinerary day card (currently D1–D12, with support for future additions) and the synchronized Leaflet map working.
 
 ## Current repository structure
 
@@ -17,10 +17,10 @@ Keep the single-file structure unless splitting files materially improves mainta
 ## Required behavior
 
 - Support desktop and mobile layouts down to 320 px wide.
-- Preserve all eight D1–D8 controls.
+- Preserve all currently defined day controls and support adding further sequential days without imposing an eight-day limit.
 - Selecting a day must update both the daily detail section and the map.
 - The map must show every listed stop for the selected day, connect stops in itinerary order, and fit the view to that day's locations.
-- D1 must show Bishkek and Ala Archa once each and identify the journey as a return trip.
+- The Ala Archa day (currently D3) must show Bishkek and Ala Archa once each and identify the journey as a return trip.
 - Keep keyboard-accessible native buttons and visible focus states.
 - Keep OpenStreetMap attribution visible.
 - Prefer Traditional Chinese for user-facing explanations; established English place names may remain in English.
@@ -60,7 +60,7 @@ After modifying the site:
 - Validate that the HTML document still contains one usable page entry point.
 - Check JavaScript syntax and confirm that the browser console has no new errors.
 - Load the page through a local HTTP server rather than relying only on a `file://` preview.
-- Click D1 through D8 and confirm each selection updates:
+- Click every defined day control (currently D1 through D12, plus any future additions) and confirm each selection updates:
   - selected-card state;
   - day title and date;
   - route text;
@@ -68,6 +68,7 @@ After modifying the site:
   - map title and note;
   - map markers and connecting line;
   - automatic map bounds.
+- Confirm that the day controls, itinerary-detail data, and map data contain the same number of entries and remain aligned in day order.
 - Verify at a desktop width around 1280 px and a mobile width around 390 px.
 - Confirm that no text, controls, map attribution, or popup content is clipped or overlapping.
 - Confirm external Leaflet assets and OpenStreetMap tiles load successfully.
