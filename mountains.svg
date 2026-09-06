@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" role="img" aria-labelledby="title desc">
+  <title id="title">天山山景意象</title><desc id="desc">以米白、鼠尾草綠與暖棕色構成的層疊山景。</desc>
+  <rect width="900" height="240" fill="#ecefde"/>
+  <path d="M0 200 130 84l75 61L330 35l112 122L563 72l116 82L790 56 900 170v70H0Z" fill="#c7d1be"/>
+  <path d="M0 218 170 121l89 54L408 78l106 107L660 102l92 62L900 110v130H0Z" fill="#8d9f83"/>
+  <path d="M0 240v-23l176-38 92 17 104-50 108 33 111-24 93 22 116-34v97Z" fill="#365946"/>
+  <path d="m330 35 45 49-31-12-26 22-34-14Z" fill="#f7f6f0" opacity=".86"/><path d="m790 56 42 45-27-9-22 20-30-15Z" fill="#f7f6f0" opacity=".75"/>
+  <path d="M0 216c150-25 258 18 385-12s211-34 329-6 126 8 186-13" fill="none" stroke="#d9c8a8" stroke-width="5" opacity=".9"/>
+</svg>
